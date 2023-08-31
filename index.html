@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Payment Card Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card_container">
+            <div class="front_card">
+                <div class="image">
+                    <img src="./chip.png" alt="">
+                    <img src="./visa.png" alt="">
+                </div>
+                <div class="card_number"></div>
+                <div class="flexbox">
+                    <div class="box">
+                        <span>CARD HOLDER</span>
+                        <div class="card_holder_name"></div>
+                    </div>
+                    <div class="box">
+                        <span>EXPIRES</span>
+                        <div class="expiration_date">
+                            <span class="exp_month"></span>
+                            <span class="exp_year"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="back_card">
+                <div class="stripe"></div>
+                <div class="box">
+                    <span>CVV</span>
+                    <div class="cvv_box">####</div>
+                    <img src="./visa.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <span>card number</span>
+                <input type="number" maxlength="16" class="card-number-input" id="number" required>
+            </div>
+            <div class="inputBox">
+                <span>card holder</span>
+                <input type="text" maxlength="21" class="card-holder-input" required>
+            </div>
+            <div class="flexbox">
+                <div class="detailsBox">
+                    <span>expiration date</span>
+                    <div class="exp_date">
+                        <select name="" id="" class="month-input">
+                            <option value="month" selected disabled></option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select name="" id="" class="year-input">
+                            <option value="year" selected disabled></option>
+                            <option value="2023">23</option>
+                            <option value="2024">24</option>
+                            <option value="2025">25</option>
+                            <option value="2026">26</option>
+                            <option value="2027">27</option>
+                            <option value="2028">28</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="detailsBox">
+                    <span>cvv</span>
+                    <input type="text" maxlength="4" class="cvv_input" required>
+                </div>
+            </div>
+            <input type="submit" value="submit" class="submit-btn" required>
+        </form>
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
