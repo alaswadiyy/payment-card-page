@@ -42,7 +42,12 @@
         <form action="">
             <div class="inputBox">
                 <span>card number</span>
-                <input type="number" maxlength="16" class="card-number-input" id="number" required>
+                <div class="cc-inputs horizontal-input-stack">
+                    <input type="tel" maxlength="4" aria-label="Credit Card First 4 Digits" id="cc-1" required pattern="[0-9]{4}" />
+                    <input type="tel" maxlength="4" aria-label="Credit Card Second 4 Digits" required pattern="[0-9]{4}" />
+                    <input type="tel" maxlength="4" aria-label="Credit Card Third 4 Digits" required pattern="[0-9]{4}" />
+                    <input type="tel" maxlength="4" aria-label="Credit Card Last 4 Digits" required pattern="[0-9]{4}" />
+                </div>
             </div>
             <div class="inputBox">
                 <span>card holder</span>

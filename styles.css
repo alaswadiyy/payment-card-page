@@ -141,6 +141,15 @@
     font-size: 12px;
 }
 
+.inputBox .horizontal-input-stack {
+    display: flex;
+    gap: .5rem;
+}
+
+.inputBox .cc-inputs input {
+    width: 4ch;
+}
+
 .container form .detailsBox span{
     display: block;
     color:#999;
