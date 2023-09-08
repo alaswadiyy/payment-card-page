@@ -12,9 +12,9 @@
             <div class="front_card">
                 <div class="image">
                     <img src="./chip.png" alt="">
-                    <img src="./visa.png" alt="">
+                    <img src="./unknown.png" alt="">
                 </div>
-                <div class="card_number"></div>
+                <div class="card_number">#### #### #### ####</div>
                 <div class="flexbox">
                     <div class="box">
                         <span>CARD HOLDER</span>
@@ -42,11 +42,11 @@
         <form action="">
             <div class="inputBox">
                 <span>card number</span>
-                <div class="cc-inputs horizontal-input-stack">
-                    <input type="tel" maxlength="4" aria-label="Credit Card First 4 Digits" id="cc-1" required pattern="[0-9]{4}" />
-                    <input type="tel" maxlength="4" aria-label="Credit Card Second 4 Digits" required pattern="[0-9]{4}" />
-                    <input type="tel" maxlength="4" aria-label="Credit Card Third 4 Digits" required pattern="[0-9]{4}" />
-                    <input type="tel" maxlength="4" aria-label="Credit Card Last 4 Digits" required pattern="[0-9]{4}" />
+                <div class="cc-inputs horizontal-input-stack card-number-input">
+                    <input type="tel" class="card_num" maxlength="4" aria-label="Credit Card First 4 Digits" id="cc-1" required pattern="[0-9]{4}" />
+                    <input type="tel" class="card_num" maxlength="4" aria-label="Credit Card Second 4 Digits" required pattern="[0-9]{4}" />
+                    <input type="tel" class="card_num" maxlength="4" aria-label="Credit Card Third 4 Digits" required pattern="[0-9]{4}" />
+                    <input type="tel" class="card_num" maxlength="4" aria-label="Credit Card Last 4 Digits" required pattern="[0-9]{4}" />
                 </div>
             </div>
             <div class="inputBox">
@@ -91,8 +91,6 @@
             <input type="submit" value="submit" class="submit-btn" required>
         </form>
     </div>
-
     <script src="./main.js"></script>
-
 </body>
 </html>
